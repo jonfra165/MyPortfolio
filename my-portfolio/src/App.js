@@ -4,6 +4,7 @@ import Header from './components/Header';
 import HomePage from './components/HomePage';
 import Footer from './components/Footer';
 import AboutMe from './components/AboutMe';
+import Experience from './components/Experience';
 const theme = createTheme({
   breakpoints: {
     values: {
@@ -20,8 +21,9 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <Header />
-      <HomePage />
       <AboutMe />
+      <HomePage />
+      <Experience />
       <Footer />
     </ThemeProvider>
   );

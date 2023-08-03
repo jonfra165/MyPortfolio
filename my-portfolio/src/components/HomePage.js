@@ -13,7 +13,7 @@ const HomePage = () => {
         <Grid item xs={12} sm={6}>
           <Box>
             {/* Använd variabeln för att referera till den importerade bilden */}
-            <img src={jonnaImage} alt="Bild på mig" style={{ width: '100%', height: 'auto' }} />
+            <img src={jonnaImage} alt="Bild1" style={{ width: '100%', height: 'auto' }} />
           </Box>
         </Grid>
 
@@ -21,7 +21,7 @@ const HomePage = () => {
         <Grid item xs={12} sm={6}>
           <Box>
             {/* Använd variabeln för att referera till den importerade bilden */}
-            <img src={jonnaImage} alt="Bild på mig" style={{ width: '100%', height: 'auto' }} />
+            <img src={jonnaImage} alt="Bild2" style={{ width: '100%', height: 'auto' }} />
           </Box>
         </Grid>
       </Grid>
