@@ -1,29 +1,27 @@
 import React from 'react';
-import { Container, Grid, Typography, Box } from '@mui/material';
+import { Container, Grid, Typography } from '@mui/material';
+import experiencesData from '../experience.json'; // Import experienceJSON file
 
 const Experience = () => {
-  const experiences = [
-    { year: '2014', title: 'Experience 2014', description: 'Description for 2014 experience' },
-    { year: '2016', title: 'Experience 2016', description: 'Description for 2016 experience' },
-    { year: '2018', title: 'Experience 2018', description: 'Description for 2018 experience' },
-    { year: '2020', title: 'Experience 2020', description: 'Description for 2020 experience' },
-    { year: '2023', title: 'Experience 2023', description: 'Description for 2023 experience' },
-  ];
+  const experiences = experiencesData.experiences;
 
   return (
-    <Container maxWidth="lg" style={{ marginTop: '20px' }} id="experience-section">
+    <Container maxWidth="sm" style={{ display: 'flex', justifyContent: 'center', margin: 'auto' }} id="experience-section">
       <Grid container spacing={2} alignItems="center">
         {experiences.map((experience) => (
-          <React.Fragment key={experience.year}>
-            {/* Year */}
-            <Grid item xs={12} md={2}>
-              <Typography variant="h5">{experience.year}</Typography>
-            </Grid>
-
-            {/* Experience content */}
-            <Grid item xs={12} md={10}>
-              <Typography variant="h6">{experience.title}</Typography>
-              <Box>{experience.description}</Box>
+          <React.Fragment key={experience.id}>
+            {/* Company */}
+            <Grid item xs={12} md={12}>
+              <Typography variant="subtitle1">{experience.company}</Typography>
+              <Typography variant="subtitle2">
+                {experience.position} - {experience.duration}
+              </Typography>
+              <Typography variant="body1" fontSize={12}>
+                {experience.description}
+              </Typography>
+              <Typography variant="body1" fontSize={12} fontStyle="italic">
+                {experience.skills.join(', ')}
+              </Typography>
             </Grid>
           </React.Fragment>
         ))}

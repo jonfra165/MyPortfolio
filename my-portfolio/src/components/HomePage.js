@@ -7,12 +7,11 @@ const HomePage = () => {
   /*const isTablet = useMediaQuery((theme) => theme.breakpoints.between('sm', 'md'));*/
   
   return (
-    <Container maxWidth="md" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+    <Container maxWidth="md" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', margin: 'auto' }}>
       <Grid container spacing={isMobile ? 0 : 1}>
         {/* Första boxen med text */}
         <Grid item xs={12} sm={6}>
           <Box>
-            {/* Använd variabeln för att referera till den importerade bilden */}
             <img src={jonnaImage} alt="Bild1" style={{ width: '100%', height: 'auto' }} />
           </Box>
         </Grid>
@@ -20,7 +19,6 @@ const HomePage = () => {
         {/* Andra boxen med bild */}    
         <Grid item xs={12} sm={6}>
           <Box>
-            {/* Använd variabeln för att referera till den importerade bilden */}
             <img src={jonnaImage} alt="Bild2" style={{ width: '100%', height: 'auto' }} />
           </Box>
         </Grid>

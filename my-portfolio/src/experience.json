@@ -1,0 +1,48 @@
+{
+    "experiences": [
+      {
+        "id": 1,
+        "company": "NordAxon",
+        "position": "Bachelor Thesis",
+        "duration": "Jan 2023 - Jun 2023",
+        "location": "Malmö, Skåne County, Sweden",
+        "description": "NordAxon has developed Emely, an AI-powered MLaaS language learning assistant designed to enhance language skills in Swedish. As key contributors to the project, my colleague and I were primarily responsible for conducting comprehensive evaluations of Emely's overall user experience and usability. These evaluations involved engaging with real users to gather valuable insights and feedback to further enhance Emely's performance and user satisfaction.",
+        "skills": ["Communication", "Usability", "User Experience (UX)", "Usability Testing"]
+      },
+      {
+        "id": 2,
+        "company": "BIK BOK AS",
+        "position": "Store Manager",
+        "duration": "Mar 2018 - Feb 2023",
+        "location": "Malmö, Skåne County, Sweden",
+        "description": "As a Store Manager, I held a multifaceted role, overseeing all aspects of store operations. I diligently tracked sales figures, managed budgets, and maintained comprehensive statistics to ensure optimal performance. An integral part of my responsibilities involved scheduling, recruiting, training, supervising, and evaluating personnel to foster a capable and motivated team.",
+        "skills": ["Communication"]
+      },
+      {
+        "id": 3,
+        "company": "ONE Contact",
+        "position": "Sales Representative",
+        "duration": "Jun 2017 - Nov 2017",
+        "location": "Barcelona, Catalonia, Spain",
+        "description": "NordAxon has developed Emely, an AI-powered MLaaS language learning assistant designed to enhance language skills in Swedish. As key contributors to the project, my colleague and I were primarily responsible for conducting comprehensive evaluations of Emely's overall user experience and usability. These evaluations involved engaging with real users to gather valuable insights and feedback to further enhance Emely's performance and user satisfaction.",        "skills": ["Communication"]
+      },
+      {
+        "id": 4,
+        "company": "Hallon",
+        "position": "Sales Representative",
+        "duration": "Nov 2015 - Apr 2016",
+        "location": "Stockholm, Sverige",
+        "description": "NordAxon has developed Emely, an AI-powered MLaaS language learning assistant designed to enhance language skills in Swedish. As key contributors to the project, my colleague and I were primarily responsible for conducting comprehensive evaluations of Emely's overall user experience and usability. These evaluations involved engaging with real users to gather valuable insights and feedback to further enhance Emely's performance and user satisfaction.",        "skills": ["Communication"]
+      },
+      {
+        "id": 5,
+        "company": "3 Sverige",
+        "position": "Sales Representative with Customer Responsibility",
+        "duration": "Jan 2014 - Nov 2015",
+        "location": "Stockholm, Sverige",
+        "description": "As a Sales Representative with customer responsibility, I provided exceptional customer service by assisting customers with various needs. This included efficiently handling invoices, offering technical support, and facilitating the sales of comprehensive solutions tailored to meet their specific requirements.",
+        "skills": ["Communication"]
+      }
+    ]
+  }
+  

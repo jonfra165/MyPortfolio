@@ -14,12 +14,12 @@ const AboutMe = () => {
   };
 
   return (
-    <Container maxWidth="lg" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '30px' }}>
-      <Grid container spacing={2} alignItems="left" marginTop={1}>
+    <Container maxWidth="lg" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', margin: '30px' }}>
+      <Grid container spacing={2} alignItems="center" marginTop={1}>
       {/* Title */}
-      <Grid item xs={12} md={6}>
-        <Typography variant="h1">JONNA FRANZÉN</Typography>
-        <Typography variant="h4">INFORMATION ARCHITECTURE</Typography>
+      <Grid item xs={12} md={6} textAlign="center" style={{ zIndex: 1, position: 'relative' }}>
+        <Typography variant="h1" fontFamily="Monoton" >JONNA FRANZÉN</Typography>
+        <Typography variant="h5" fontFamily="PT Serif">INFORMATION ARCHITECTURE</Typography>
       </Grid>
 
       {/* Image */}
