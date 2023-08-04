@@ -1,28 +1,50 @@
 import React from 'react';
-import { ThemeProvider, createTheme } from '@mui/material/styles';
-
+import { Grid, ThemeProvider, createTheme } from '@mui/material';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
-import HomePage from './components/HomePage';
-import Footer from './components/Footer';
-import WelcomePage from './components/WelcomePage';
+import StartPage from './components/StartPage';
+import Cv from './components/Cv';
 import Experience from './components/Experience';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
-const theme = createTheme({
-  // Your custom theme configuration
-});
+// Define a theme for your application
+const theme = createTheme();
 
-function App() {
+const App = () => {
   return (
-    <>
-      <ThemeProvider theme={theme}>
-        <Header />
-        <WelcomePage />
-        <HomePage />
-        <Experience />
-        <Footer />
-      </ThemeProvider>
-    </>
+    <ThemeProvider theme={theme}>
+      <BrowserRouter>
+        <Grid container direction="column">
+          {/* Header */}
+          <Grid item>
+            <Header />
+          </Grid>
+
+          {/* Content */}
+          <Grid item container>
+            <Grid item xs={false} sm={1} />
+            <Grid item xs={12} sm={10}>
+              <Routes>
+                <Route path="/" element={<StartPage />} />
+                <Route path="/cv" element={<Cv />} />
+                <Route path="/experience" element={<Experience />} />
+                <Route path="/projects" element={<Projects />} />
+                <Route path="/contact" element={<Contact />} />
+              </Routes>
+            </Grid>
+            <Grid item xs={false} sm={1} />
+          </Grid>
+
+          {/* Footer */}
+          <Grid item>
+            <Footer />
+          </Grid>
+        </Grid>
+      </BrowserRouter>
+    </ThemeProvider>
   );
-}
+};
 
 export default App;

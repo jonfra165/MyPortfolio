@@ -18,10 +18,10 @@ const WelcomePage = () => {
     <Grid container spacing={2} alignItems="center" justifyContent="center">
       {/* Title */}
       <Grid item xs={12} md={6} textAlign="center">
-        <Typography variant="h2" fontFamily="Monoton">
+        <Typography variant="h1" fontFamily="Monoton">
           JONNA FRANZÉN
         </Typography>
-        <Typography variant="h5" fontFamily="PT Serif">
+        <Typography variant="h4" fontFamily="PT Serif">
           INFORMATION ARCHITECTURE
         </Typography>
       </Grid>
