@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Container, Grid, Typography, Dialog, DialogContent } from '@mui/material';
 import aboutMe from '../images/Crosse.jpg';
 
-const AboutMe = () => {
+const WelcomePage = () => {
   const [open, setOpen] = useState(false);
 
   const handleImageClick = () => {
@@ -14,12 +14,16 @@ const AboutMe = () => {
   };
 
   return (
-    <Container maxWidth="lg" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', margin: '30px' }}>
-      <Grid container spacing={2} alignItems="center" marginTop={1}>
+    <Container maxWidth="lg" style={{ marginTop: '100px' }}>
+    <Grid container spacing={2} alignItems="center" justifyContent="center">
       {/* Title */}
-      <Grid item xs={12} md={6} textAlign="center" style={{ zIndex: 1, position: 'relative' }}>
-        <Typography variant="h1" fontFamily="Monoton" >JONNA FRANZÉN</Typography>
-        <Typography variant="h5" fontFamily="PT Serif">INFORMATION ARCHITECTURE</Typography>
+      <Grid item xs={12} md={6} textAlign="center">
+        <Typography variant="h2" fontFamily="Monoton">
+          JONNA FRANZÉN
+        </Typography>
+        <Typography variant="h5" fontFamily="PT Serif">
+          INFORMATION ARCHITECTURE
+        </Typography>
       </Grid>
 
       {/* Image */}
@@ -43,9 +47,9 @@ const AboutMe = () => {
         </DialogContent>
       </Dialog>
     </Grid>
-    </Container>
+  </Container>
     
   );
 };
 
-export default AboutMe;
+export default WelcomePage;

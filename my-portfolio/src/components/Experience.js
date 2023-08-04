@@ -6,7 +6,7 @@ const Experience = () => {
   const experiences = experiencesData.experiences;
 
   return (
-    <Container maxWidth="sm" style={{ display: 'flex', justifyContent: 'center', margin: 'auto' }} id="experience-section">
+    <Container maxWidth="sm" style={{ display: 'flex', justifyContent: 'center', margin: 'auto', paddingBottom: '100px' }} id="experience-section">
       <Grid container spacing={2} alignItems="center">
         {experiences.map((experience) => (
           <React.Fragment key={experience.id}>
